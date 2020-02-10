@@ -13,6 +13,7 @@
 		05556F0823E634E300758B4E /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05556F0723E634E300758B4E /* MainPresenter.swift */; };
 		05556F0A23E6381700758B4E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05556F0923E6381700758B4E /* MainViewController.swift */; };
 		05556F0D23E6FB3600758B4E /* CarPhotoClassifier 6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 05556F0C23E6FB3600758B4E /* CarPhotoClassifier 6.mlmodel */; };
+		0559DFDC23F1F56200F997DC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0559DFDB23F1F56200F997DC /* README.md */; };
 		F0BC7C581F4CCE1F00577CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BC7C571F4CCE1F00577CF7 /* AppDelegate.swift */; };
 		F0BC7C5D1F4CCE1F00577CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BC7C5B1F4CCE1F00577CF7 /* Main.storyboard */; };
 		F0BC7C5F1F4CCE1F00577CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BC7C5E1F4CCE1F00577CF7 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		05556F0723E634E300758B4E /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		05556F0923E6381700758B4E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		05556F0C23E6FB3600758B4E /* CarPhotoClassifier 6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "CarPhotoClassifier 6.mlmodel"; path = "CarPhotoClassifier.mlproj/Models/CarPhotoClassifier 6.mlmodel"; sourceTree = SOURCE_ROOT; };
+		0559DFDB23F1F56200F997DC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F0BC7C541F4CCE1F00577CF7 /* CarPhotoML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPhotoML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BC7C571F4CCE1F00577CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0BC7C5C1F4CCE1F00577CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				05556F0323E633A300758B4E /* Default-568h@2x.png */,
+				0559DFDB23F1F56200F997DC /* README.md */,
 				F0BC7C561F4CCE1F00577CF7 /* CarPhotoML */,
 				F0BC7C551F4CCE1F00577CF7 /* Products */,
 			);
@@ -149,6 +152,7 @@
 			files = (
 				F0BC7C621F4CCE1F00577CF7 /* LaunchScreen.storyboard in Resources */,
 				05556F0423E633A300758B4E /* Default-568h@2x.png in Resources */,
+				0559DFDC23F1F56200F997DC /* README.md in Resources */,
 				F0BC7C5F1F4CCE1F00577CF7 /* Assets.xcassets in Resources */,
 				F0BC7C5D1F4CCE1F00577CF7 /* Main.storyboard in Resources */,
 			);
