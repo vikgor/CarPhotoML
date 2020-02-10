@@ -1,0 +1,12 @@
+.DS_Store
+*.xcworkspace/xcuserdata
+*.xcworkspace/xcshareddata
+*/*.xcodeproj/project.xcworkspace
+xcuserdata
+Pods
+CarPhotoML Photos
+CarPhotoML Photos Version 6
+Car Photo.MOV
+CarPhotoClassifier.mlproj
+Default-568h@2x.png
+
