@@ -14,22 +14,78 @@ final class MainViewController: UIViewController {
     
     typealias StoreSubscriberStateType = AppState
     
-    @IBOutlet private weak var carPhotoView: UIImageView!
-    @IBOutlet private weak var resultLabel: UILabel!
-    @IBOutlet private weak var takePhotoButton: UIButton!
-    @IBOutlet private weak var pickPhotoButton: UIButton!
+    private var didSetupConstraints = false
     
-    // MARK: - IBActions
-    @IBAction private func takePhoto(_ sender: Any) {
-        mainStore.dispatch(TakePhoto())
-    }
-    @IBAction private func selectPhoto(_ sender: Any) {
-        mainStore.dispatch(PickPhoto())
-    }
+    private let contentView = UIView()
+    
+    private let carPhotoView: UIImageView = {
+        let image = UIImageView()
+        return image
+    }()
+    
+    private let resultLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    
+    private let takePhotoButton: UIButton = {
+        let button = UIButton()
+        button.setTitle(StringValues.takePhotoButtonLabel, for: .normal)
+        return button
+    }()
+    
+    private let pickPhotoButton: UIButton = {
+        let button = UIButton()
+        button.setTitle(StringValues.pickPhotoButtonLabel, for: .normal)
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mainStore.subscribe(self)
+        
+        takePhotoButton.addTarget(self, action: #selector(didTapTakeButton), for: .touchUpInside)
+        pickPhotoButton.addTarget(self, action: #selector(didTapPickButton), for: .touchUpInside)
+    }
+    
+    override func updateViewConstraints() {
+        if (!didSetupConstraints) {
+            
+            contentView.snp.makeConstraints { make in
+                make.edges.equalTo(view).inset(UIEdgeInsets.zero)
+            }
+            
+            carPhotoView.snp.makeConstraints { make in
+                make.top.equalTo(contentView.snp.topMargin).inset(20)
+                make.leading.equalTo(contentView).inset(20)
+                make.trailing.equalTo(contentView).inset(20)
+                make.height.equalTo(carPhotoView.snp.width).multipliedBy(1.0/1.0)
+            }
+            
+            resultLabel.snp.makeConstraints { make in
+                make.top.equalTo(carPhotoView.snp.bottom).offset(20)
+                make.leading.equalTo(contentView).inset(20)
+                make.trailing.equalTo(contentView).inset(20)
+            }
+            
+            takePhotoButton.snp.makeConstraints { make in
+                make.leading.equalTo(contentView).inset(20)
+                make.trailing.equalTo(contentView).inset(20)
+                make.height.equalTo(50)
+            }
+            
+            pickPhotoButton.snp.makeConstraints { make in
+                make.top.equalTo(takePhotoButton.snp.bottom).offset(20)
+                make.leading.equalTo(contentView).inset(20)
+                make.trailing.equalTo(contentView).inset(20)
+                make.bottom.equalTo(contentView.snp.bottom).inset(20)
+                make.height.equalTo(50)
+            }
+            
+            didSetupConstraints = true
+        }
+        
+        super.updateViewConstraints()
     }
     
 }
@@ -37,7 +93,7 @@ final class MainViewController: UIViewController {
 // MARK: - StoreSubscriber
 extension MainViewController: StoreSubscriber {
     func newState(state: AppState) {
-        navigationItem.title = state.viewTitle.rawValue
+        title = state.viewTitle.rawValue
         resultLabel.text = state.resultText.rawValue
         
         switch state.photoPickerState {
@@ -46,11 +102,10 @@ extension MainViewController: StoreSubscriber {
         case .photoLibrary:
             openPhotoPicker(view: self, sourceType: .photoLibrary)
         case .none:
-            _ = [takePhotoButton, pickPhotoButton].map { setupButtonStyle(button: $0) }
+            setupSubviews()
             setupNavigation()
-            setupBasicStyle()
+            setupStyles()
         }
-        
     }
 }
 
@@ -80,21 +135,49 @@ extension MainViewController: UIImagePickerControllerDelegate, UINavigationContr
 
 // MARK: - Private
 private extension MainViewController {
+    func setupSubviews() {
+        view.addSubview(contentView)
+        
+        contentView.addSubview(carPhotoView)
+        contentView.addSubview(resultLabel)
+        contentView.addSubview(takePhotoButton)
+        contentView.addSubview(pickPhotoButton)
+        
+        view.setNeedsUpdateConstraints()
+    }
+    
     func setupNavigation() {
-        let infoButton = UIBarButtonItem(title: "Info",
+        let infoButton = UIBarButtonItem(title: StringValues.infoViewTitle,
                                          style: .plain,
                                          target: self,
-                                         action: #selector(infoButtonClicked))
+                                         action: #selector(didTapInfoButton))
         navigationItem.rightBarButtonItem = infoButton
     }
     
-    func setupBasicStyle() {
+    func setupStyles() {
+        if #available(iOS 13.0, *) {
+            view.backgroundColor = .secondarySystemBackground
+        } else {
+            view.backgroundColor = .lightGray
+        }
+        
+        carPhotoView.contentMode = .scaleAspectFit
+        carPhotoView.backgroundColor = .darkGray
         carPhotoView.layer.cornerRadius = 10.0
-    }
-
-    func setupButtonStyle(button: UIButton) {
-        button.layer.masksToBounds = false
-        button.layer.cornerRadius = 10.0
+        
+        resultLabel.textAlignment = .center
+        [takePhotoButton, pickPhotoButton].forEach {
+            $0.layer.masksToBounds = false
+            $0.layer.cornerRadius = 10
+            if #available(iOS 13.0, *) {
+                $0.backgroundColor = .opaqueSeparator
+                $0.setTitleColor(.label, for: .normal)
+            } else {
+                $0.backgroundColor = .darkGray
+                $0.setTitleColor(.white, for: .normal)
+            }
+        }
+        
     }
     
     func openPhotoPicker(view: UIViewController, sourceType: UIImagePickerController.SourceType) {
@@ -107,8 +190,8 @@ private extension MainViewController {
     
     /// Analyze the image using CoreML model and predict wheter it's good or bad
     func analyzeImage(_ image: CIImage) {
-        resultLabel.text = "analyzing..."
-        guard let model = try? VNCoreMLModel(for: CarPhotoClassifier_6(configuration: MLModelConfiguration()).model) else {
+        resultLabel.text = StringValues.analyzingLabel
+        guard let model = try? VNCoreMLModel(for: CarPhoto(configuration: MLModelConfiguration()).model) else {
             return
         }
         let request = VNCoreMLRequest(model: model, completionHandler: { (vnrequest, error) in
@@ -136,8 +219,19 @@ private extension MainViewController {
     }
     
     @objc
-    func infoButtonClicked() {
+    func didTapInfoButton() {
         let viewController = InfoViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    @objc
+    func didTapTakeButton(sender: AnyObject) {
+        mainStore.dispatch(TakePhoto())
+    }
+    
+    @objc
+    func didTapPickButton(sender: AnyObject) {
+        mainStore.dispatch(PickPhoto())
+    }
+    
 }
