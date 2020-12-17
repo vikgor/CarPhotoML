@@ -26,6 +26,6 @@ enum PhotoPickerState: Equatable {
 
 enum ResultLabelState: String {
     case pickPhoto = "Upload car photo"
-    case camera = "It's camera"
-    case photoLibrary = "It's picker"
+    case camera = "Uploading from camera..."
+    case photoLibrary = "Uploading from photo library..."
 }

@@ -20,13 +20,13 @@ final class InfoViewController: UIViewController {
     
     private let infoLabelPart1: UILabel = {
         let label = UILabel()
-        label.text = InfoViewModel.label1Text
+        label.text = StringValues.label1Text
         return label
     }()
     
     private let infoLabelPart2: UILabel = {
         let label = UILabel()
-        label.text = InfoViewModel.label2Text
+        label.text = StringValues.label2Text
         return label
     }()
     
@@ -63,7 +63,7 @@ final class InfoViewController: UIViewController {
     
     private let moreButton: UIButton = {
         let button = UIButton()
-        button.setTitle(InfoViewModel.findOutMore, for: .normal)
+        button.setTitle(StringValues.findOutMore, for: .normal)
         return button
     }()
     
@@ -146,7 +146,7 @@ private extension InfoViewController {
     }
     
     func setupStyles() {
-        title = InfoViewModel.infoViewTitle
+        title = StringValues.infoViewTitle
         moreButton.layer.cornerRadius = 10
         
         if #available(iOS 13.0, *) {
