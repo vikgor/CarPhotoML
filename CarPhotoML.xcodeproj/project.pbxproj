@@ -8,29 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		05556F0223E5E58C00758B4E /* CarPhoto.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 05556F0123E5E58C00758B4E /* CarPhoto.mlmodel */; };
-		05556F0423E633A300758B4E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05556F0323E633A300758B4E /* Default-568h@2x.png */; };
-		05556F0623E634DA00758B4E /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05556F0523E634DA00758B4E /* MainInteractor.swift */; };
-		05556F0823E634E300758B4E /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05556F0723E634E300758B4E /* MainPresenter.swift */; };
-		05556F0A23E6381700758B4E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05556F0923E6381700758B4E /* MainViewController.swift */; };
-		05556F0D23E6FB3600758B4E /* CarPhotoClassifier 6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 05556F0C23E6FB3600758B4E /* CarPhotoClassifier 6.mlmodel */; };
 		0559DFDC23F1F56200F997DC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0559DFDB23F1F56200F997DC /* README.md */; };
+		0575E1C6258AA7DB00947924 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575E1C4258AA7DB00947924 /* InfoViewController.swift */; };
+		0575E1CB258AD0F100947924 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575E1CA258AD0F100947924 /* InfoViewModel.swift */; };
+		05A9DEA125816DF500FDBA53 /* CarPhotoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9DE9C25816DF400FDBA53 /* CarPhotoReducer.swift */; };
+		05A9DEA225816DF500FDBA53 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9DE9E25816DF500FDBA53 /* AppState.swift */; };
+		05A9DEA325816DF500FDBA53 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9DEA025816DF500FDBA53 /* Actions.swift */; };
+		05A9DEA825816EC400FDBA53 /* CarPhotoClassifier 6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 05A9DEA725816EC400FDBA53 /* CarPhotoClassifier 6.mlmodel */; };
+		05A9DEE32581733B00FDBA53 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9DEE22581733B00FDBA53 /* MainViewController.swift */; };
+		05A9DEE82581738D00FDBA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A9DEE72581738D00FDBA53 /* Main.storyboard */; };
+		C06A0655830F1113EDCA9C42 /* Pods_CarPhotoML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4581730ADBAFD78ADA3B1E77 /* Pods_CarPhotoML.framework */; };
 		F0BC7C581F4CCE1F00577CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BC7C571F4CCE1F00577CF7 /* AppDelegate.swift */; };
-		F0BC7C5D1F4CCE1F00577CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BC7C5B1F4CCE1F00577CF7 /* Main.storyboard */; };
 		F0BC7C5F1F4CCE1F00577CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BC7C5E1F4CCE1F00577CF7 /* Assets.xcassets */; };
 		F0BC7C621F4CCE1F00577CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BC7C601F4CCE1F00577CF7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05556F0123E5E58C00758B4E /* CarPhoto.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CarPhoto.mlmodel; sourceTree = "<group>"; };
-		05556F0323E633A300758B4E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		05556F0523E634DA00758B4E /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
-		05556F0723E634E300758B4E /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		05556F0923E6381700758B4E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		05556F0C23E6FB3600758B4E /* CarPhotoClassifier 6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "CarPhotoClassifier 6.mlmodel"; path = "CarPhotoClassifier.mlproj/Models/CarPhotoClassifier 6.mlmodel"; sourceTree = SOURCE_ROOT; };
 		0559DFDB23F1F56200F997DC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0575E1C4258AA7DB00947924 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		0575E1CA258AD0F100947924 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
+		05A9DE9C25816DF400FDBA53 /* CarPhotoReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarPhotoReducer.swift; sourceTree = "<group>"; };
+		05A9DE9E25816DF500FDBA53 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		05A9DEA025816DF500FDBA53 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		05A9DEA725816EC400FDBA53 /* CarPhotoClassifier 6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "CarPhotoClassifier 6.mlmodel"; sourceTree = "<group>"; };
+		05A9DEE22581733B00FDBA53 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		05A9DEE72581738D00FDBA53 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4581730ADBAFD78ADA3B1E77 /* Pods_CarPhotoML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarPhotoML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F43AFD9E3D88CAE6628B642 /* Pods-CarPhotoML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPhotoML.debug.xcconfig"; path = "Target Support Files/Pods-CarPhotoML/Pods-CarPhotoML.debug.xcconfig"; sourceTree = "<group>"; };
+		EA383C01447788B0912D1EEC /* Pods-CarPhotoML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPhotoML.release.xcconfig"; path = "Target Support Files/Pods-CarPhotoML/Pods-CarPhotoML.release.xcconfig"; sourceTree = "<group>"; };
 		F0BC7C541F4CCE1F00577CF7 /* CarPhotoML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPhotoML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BC7C571F4CCE1F00577CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0BC7C5C1F4CCE1F00577CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0BC7C5E1F4CCE1F00577CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0BC7C611F4CCE1F00577CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0BC7C631F4CCE1F00577CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,29 +49,102 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06A0655830F1113EDCA9C42 /* Pods_CarPhotoML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05556F0B23E638E700758B4E /* Main */ = {
+		0575E1B6258A9FA300947924 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				05556F0923E6381700758B4E /* MainViewController.swift */,
-				05556F0523E634DA00758B4E /* MainInteractor.swift */,
-				05556F0723E634E300758B4E /* MainPresenter.swift */,
+				05A9DEE22581733B00FDBA53 /* MainViewController.swift */,
+				05A9DEE72581738D00FDBA53 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		0575E1CD258AD31200947924 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				0575E1C4258AA7DB00947924 /* InfoViewController.swift */,
+				0575E1CA258AD0F100947924 /* InfoViewModel.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		05A9DE9B25816DF400FDBA53 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				05A9DE9C25816DF400FDBA53 /* CarPhotoReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		05A9DE9D25816DF500FDBA53 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				05A9DE9E25816DF500FDBA53 /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		05A9DE9F25816DF500FDBA53 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				05A9DEA025816DF500FDBA53 /* Actions.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		05A9DEA525816E9900FDBA53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0BC7C571F4CCE1F00577CF7 /* AppDelegate.swift */,
+				F0BC7C601F4CCE1F00577CF7 /* LaunchScreen.storyboard */,
+				F0BC7C5E1F4CCE1F00577CF7 /* Assets.xcassets */,
+				F0BC7C631F4CCE1F00577CF7 /* Info.plist */,
+				05556F0123E5E58C00758B4E /* CarPhoto.mlmodel */,
+				05A9DEA725816EC400FDBA53 /* CarPhotoClassifier 6.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		05A9DEE12581730600FDBA53 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0575E1B6258A9FA300947924 /* Main */,
+				0575E1CD258AD31200947924 /* Info */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0EB30CEAB571A57F12513504 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4581730ADBAFD78ADA3B1E77 /* Pods_CarPhotoML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99DE4C06640F4A1F3D4D029 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F43AFD9E3D88CAE6628B642 /* Pods-CarPhotoML.debug.xcconfig */,
+				EA383C01447788B0912D1EEC /* Pods-CarPhotoML.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F0BC7C4B1F4CCE1F00577CF7 = {
 			isa = PBXGroup;
 			children = (
-				05556F0323E633A300758B4E /* Default-568h@2x.png */,
 				0559DFDB23F1F56200F997DC /* README.md */,
 				F0BC7C561F4CCE1F00577CF7 /* CarPhotoML */,
 				F0BC7C551F4CCE1F00577CF7 /* Products */,
+				B99DE4C06640F4A1F3D4D029 /* Pods */,
+				0EB30CEAB571A57F12513504 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,14 +159,11 @@
 		F0BC7C561F4CCE1F00577CF7 /* CarPhotoML */ = {
 			isa = PBXGroup;
 			children = (
-				F0BC7C571F4CCE1F00577CF7 /* AppDelegate.swift */,
-				05556F0B23E638E700758B4E /* Main */,
-				F0BC7C5B1F4CCE1F00577CF7 /* Main.storyboard */,
-				F0BC7C601F4CCE1F00577CF7 /* LaunchScreen.storyboard */,
-				F0BC7C5E1F4CCE1F00577CF7 /* Assets.xcassets */,
-				F0BC7C631F4CCE1F00577CF7 /* Info.plist */,
-				05556F0123E5E58C00758B4E /* CarPhoto.mlmodel */,
-				05556F0C23E6FB3600758B4E /* CarPhotoClassifier 6.mlmodel */,
+				05A9DE9F25816DF500FDBA53 /* Action */,
+				05A9DE9B25816DF400FDBA53 /* Reducer */,
+				05A9DE9D25816DF500FDBA53 /* State */,
+				05A9DEE12581730600FDBA53 /* ViewControllers */,
+				05A9DEA525816E9900FDBA53 /* Resources */,
 			);
 			path = CarPhotoML;
 			sourceTree = "<group>";
@@ -97,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0BC7C661F4CCE1F00577CF7 /* Build configuration list for PBXNativeTarget "CarPhotoML" */;
 			buildPhases = (
+				42382974348A9B60A4B4B6F9 /* [CP] Check Pods Manifest.lock */,
 				F0BC7C501F4CCE1F00577CF7 /* Sources */,
 				F0BC7C511F4CCE1F00577CF7 /* Frameworks */,
 				F0BC7C521F4CCE1F00577CF7 /* Resources */,
+				7DB13BC9FEAC099605FC0386 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -117,8 +197,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = on3;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					F0BC7C531F4CCE1F00577CF7 = {
 						CreatedOnToolsVersion = 9.0;
@@ -151,14 +231,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0BC7C621F4CCE1F00577CF7 /* LaunchScreen.storyboard in Resources */,
-				05556F0423E633A300758B4E /* Default-568h@2x.png in Resources */,
 				0559DFDC23F1F56200F997DC /* README.md in Resources */,
 				F0BC7C5F1F4CCE1F00577CF7 /* Assets.xcassets in Resources */,
-				F0BC7C5D1F4CCE1F00577CF7 /* Main.storyboard in Resources */,
+				05A9DEE82581738D00FDBA53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42382974348A9B60A4B4B6F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarPhotoML-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DB13BC9FEAC099605FC0386 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarPhotoML/Pods-CarPhotoML-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarPhotoML/Pods-CarPhotoML-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0BC7C501F4CCE1F00577CF7 /* Sources */ = {
@@ -166,25 +290,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				05556F0223E5E58C00758B4E /* CarPhoto.mlmodel in Sources */,
-				05556F0823E634E300758B4E /* MainPresenter.swift in Sources */,
 				F0BC7C581F4CCE1F00577CF7 /* AppDelegate.swift in Sources */,
-				05556F0D23E6FB3600758B4E /* CarPhotoClassifier 6.mlmodel in Sources */,
-				05556F0A23E6381700758B4E /* MainViewController.swift in Sources */,
-				05556F0623E634DA00758B4E /* MainInteractor.swift in Sources */,
+				05A9DEA225816DF500FDBA53 /* AppState.swift in Sources */,
+				05A9DEA325816DF500FDBA53 /* Actions.swift in Sources */,
+				05A9DEA125816DF500FDBA53 /* CarPhotoReducer.swift in Sources */,
+				05A9DEA825816EC400FDBA53 /* CarPhotoClassifier 6.mlmodel in Sources */,
+				0575E1C6258AA7DB00947924 /* InfoViewController.swift in Sources */,
+				05A9DEE32581733B00FDBA53 /* MainViewController.swift in Sources */,
+				0575E1CB258AD0F100947924 /* InfoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F0BC7C5B1F4CCE1F00577CF7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0BC7C5C1F4CCE1F00577CF7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F0BC7C601F4CCE1F00577CF7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -221,6 +340,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -246,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -280,6 +400,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -299,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -309,12 +430,14 @@
 		};
 		F0BC7C671F4CCE1F00577CF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F43AFD9E3D88CAE6628B642 /* Pods-CarPhotoML.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J349HN2J4J;
-				INFOPLIST_FILE = CarPhotoML/Info.plist;
+				INFOPLIST_FILE = CarPhotoML/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CarPhotoML;
 				PRODUCT_NAME = CarPhotoML;
 				SWIFT_VERSION = 5.0;
@@ -324,13 +447,15 @@
 		};
 		F0BC7C681F4CCE1F00577CF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA383C01447788B0912D1EEC /* Pods-CarPhotoML.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J349HN2J4J;
-				INFOPLIST_FILE = CarPhotoML/Info.plist;
+				INFOPLIST_FILE = CarPhotoML/Resources/Info.plist;
 				"INFOPLIST_FILE[sdk=*]" = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CarPhotoML;
 				PRODUCT_NAME = CarPhotoML;
 				SWIFT_VERSION = 5.0;
